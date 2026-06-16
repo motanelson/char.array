@@ -7,13 +7,9 @@ counter=0
 backs=False
 for aa in a:
   if aa=="\\":
-      backs=True
+      print(b+"["+str(counter)+"]='\\n';")
   else:
-      if(backs):
-          print(b+"["+str(counter)+"]='\\"+aa+"';")
-          back=False
-      else:
-          print(b+"["+str(counter)+"]='"+aa+"';")
+      print(b+"["+str(counter)+"]='"+aa+"';")
   counter=counter+1
 
 print(b+"["+str(counter)+"]='"+"\\0"+"';")
